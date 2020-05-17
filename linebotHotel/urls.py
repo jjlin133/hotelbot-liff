@@ -21,6 +21,6 @@ from hotelapi import views
 urlpatterns = [
     url('^callback', views.callback),
     path('admin/', admin.site.urls),
-    url(r'', views.hotelform),  #jjlin revised 20200517
+    url(r'', views.index),  #jjlin revised 20200517
     #url(r'^hotelform/$', views.hotelform),
 ]
