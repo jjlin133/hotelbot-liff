@@ -67,5 +67,5 @@ def callback(request):
         return HttpResponseBadRequest()
     
 def hotelform(request):
-  return render(request,"index_form.html",locals())
+    return render(request,"index_form.html",locals())
 
