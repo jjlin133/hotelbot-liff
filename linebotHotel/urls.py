@@ -31,7 +31,7 @@ urlpatterns = [
 app_name='hotelapi'
 
 urlpatterns = [
-    url('callback/', include('hotelapi.urls')),
+    url('callback/', include('hotelapi.views')),
     path('',views.callback,name='callback'),
     path('', views.index, name='index'),
 ]
