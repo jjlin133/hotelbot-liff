@@ -23,7 +23,7 @@ from django.urls import include
 urlpatterns = [
     url('^callback', views.callback),
     path('admin/', admin.site.urls),
-    url(r'', views.index),  #jjlin revised 20200517
+    #url(r'', views.index),  #jjlin revised 20200517
     #url(r'^hotelform/$', views.hotelform),
 ]
 
