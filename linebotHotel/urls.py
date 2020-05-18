@@ -18,9 +18,19 @@ from django.urls import path
 from django.conf.urls import url
 from hotelapi import views
 
+"""  orig vsersion 
 urlpatterns = [
     url('^callback', views.callback),
     path('admin/', admin.site.urls),
     url(r'', views.index),  #jjlin revised 20200517
     #url(r'^hotelform/$', views.hotelform),
+]
+"""
+
+app_name='hotelapi'
+
+urlpatterns = [
+    url('callback/', include('hotelapi.urls')),
+    path('',views.callback,name='callback'),
+    path('', views.index, name='index'),
 ]
